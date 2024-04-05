@@ -8,43 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="/images/favicon.ico">
 </head>
+<!-- Tailwindcss class for body to set min-width equal to that of the screen -->
 <body class="min-h-screen">  
+    <!-- Tailwindcss class on footer element to set intial values to footer container -->
     <footer class="footer-bg w-full absolute bottom-0 left-0 text-center pt-10 pb-10 px-20">
-        
-        <div  class="grid grid-cols-2 gap-1 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 sm:col-span-2">
-            <div class=" md:space-y-0 md:flex-row">
-                <h1 class="font-semibold max-w-lg text-lg tracking-tight text-[#313131] xl:text-xl dark:text-white mb-5">Subscribe to our new letter for update.</h1>
-            
-                <input type="text" placeholder="Email Address" class="px-2 py-1 text-[#313131] hover:shadow-lg focus:outline-[#D86943] border-none bg-slate-200">
-                <button class="bg-[#D86943] px-2 py-1 rounded-md text-[#F6F1EA] focus:ring focus:ring-opacity-40 focus:ring-[#5D5F5E] hover:bg-orange-600">Subscribe</button>
+        <!-- Tailwindcss class on div to set grid values for grid container including media queries for responsiveness -->
+        <div  class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+            <!-- Tailwindcss class on div to set mobile view for subscribtion section of footer -->
+            <div class=" md:space-y-0 md:flex-row col-span-2">
+                <!-- Tailwindcss class on h1, input and button to set css values including options for light and dark theme -->
+                <label for="Subscribe heading"><h1 class="font-semibold max-w-lg text-lg tracking-tight text-[#313131] xl:text-xl dark:text-white mb-5 ">Subscribe to our new letter for update.</h1></label>
+                <label for="Email Address"><input type="text" placeholder="Email Address" class="px-2 py-1 text-[#313131] hover:shadow-lg focus:outline-[#D86943] border-none bg-slate-200 mb-5"></label>
+                <label for="Subscribe button"><button class="bg-[#D86943] px-2 py-1 rounded-md text-[#F6F1EA] focus:ring focus:ring-opacity-40 focus:ring-[#5D5F5E] hover:bg-orange-600">Subscribe</button></label>
             </div>
+            <!-- Tailwindcss class on 2nd grid column to translate for media to large screens 224px to the left-->
             <div class="md:translate-x-56">
-                <p class="font-semibold max-w-lg text-xl tracking-tight text-[#313131] xl:text-2xl dark:text-white mb-5">Quick Links</p>
+                <!-- Tailwindcss class on p, li and a to set css values including options for light and dark theme -->
+                <label for="Links-heading"><p class="font-semibold max-w-lg text-xl tracking-tight text-[#313131] xl:text-2xl dark:text-white mb-5">Quick Links</p></label>
                 <ul>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/" target="_blank">Home</a></li>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/about/" target="_blank">Who we are</a></li>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/about/" target="_blank">Our Philisophy</a></li>
+                    <label for="home-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/" target="_blank">Home</a></li></label>
+                    <label for="about-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/about/" target="_blank">Who we are</a></li></label>
+                    <label for="philosphy-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white mb-5"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.codespace.co.za/about/" target="_blank">Our Philisophy</a></li></label>
                 </ul>
 
             </div>
+            <!-- Tailwindcss class on 3rd grid column to translate for media to large screens 128px to the left -->
             <div class="md:translate-x-32">
-                <p class="font-semibold max-w-lg text-xl tracking-tight text-[#313131] xl:text-2xl dark:text-white mb-5">Technologies</p>
+                <!-- Tailwindcss class on p, li and a to set css values including options for light and dark theme -->
+                <label for="technologies-heading"><p class="font-semibold max-w-lg text-xl tracking-tight text-[#313131] xl:text-2xl dark:text-white mb-5">Technologies</p></label>
                 <ul>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/html/" target="_blank">HTML</a></li>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/css/" target="_blank">CSS</a></li>
-                    <li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li>
+                    <label for="HTML-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/html/" target="_blank">HTML</a></li></label>
+                    <label for="CSS-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/css/" target="_blank">CSS</a></li></label>
+                    <label for="JavaScript-link"><li class="max-w-lg text-sm tracking-tight text-[#313131] xl:text-base dark:text-white"><a class= "hover:underline hover:dark:text-black hover:text-white" href="https://www.w3schools.com/js/" target="_blank">JavaScript</a></li></label>
                 </ul>
 
             </div>
 
         </div>
+        <!-- Tailwindcss class on hr to set margin and colour -->
         <hr class="my-10 border-[#D86943]">
-        <div class="flex items-center justify-between">
-            <img src="/images/CodeSpace-logo.png" class="mt-4 w-52">
-            <a href="https://www.instagram.com/codespaceza/" class="fa fa-instagram dark:text-white text-black hover:text-[#D86943]"></a>
-            <a href="https://www.facebook.com/codespaceza" class="fa fa-facebook dark:text-white text-black hover:text-[#D86943]"></a>
-            <a href="https://www.youtube.com/channel/UCfmXJliguiwBv2QlRzWdrxA" class="fa fa-youtube dark:text-white text-black hover:text-[#D86943]"></a>
-            <a href="https://www.linkedin.com/school/codespaceza/" class="fa fa-linkedin dark:text-white text-black hover:text-[#D86943]"></a>
+        <!-- Tailwindcss class on last after hr div to set values for flexbox -->
+        <div class="flex items-center justify-between flex-wrap">
+            <!-- Tailwindcss class on img and a to set css values including options for light and dark theme -->
+            <img src="/images/CodeSpace-logo.png" class="mt-4 w-52 sm:w-36" alt="codespace logo">
+            <label for="instgram-link"><a href="https://www.instagram.com/codespaceza/" class="fa fa-instagram dark:text-white text-black hover:text-[#D86943]"></a></label>
+            <label for="facebook-link"><a href="https://www.facebook.com/codespaceza" class="fa fa-facebook dark:text-white text-black hover:text-[#D86943]"></a></label>
+            <label for="youtube-link"><a href="https://www.youtube.com/channel/UCfmXJliguiwBv2QlRzWdrxA" class="fa fa-youtube dark:text-white text-black hover:text-[#b9816e]"></a></label>
+            <label for="linkedin-link"><a href="https://www.linkedin.com/school/codespaceza/" class="fa fa-linkedin dark:text-white text-black hover:text-[#D86943]"></a></label>
             
         </div>
     </footer>
