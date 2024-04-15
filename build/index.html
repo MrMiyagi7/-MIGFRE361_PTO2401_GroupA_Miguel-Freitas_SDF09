@@ -9,13 +9,13 @@
     <link rel="icon" href="./images/favicon.ico">
 </head>
 <!-- Tailwindcss class for body to set min-width equal to that of the screen -->
-<body class="min-h-screen">  
+<body class="min-h-screen p-0 m-0 relative">  
     <!-- Tailwindcss class on footer element to set intial values to footer container -->
-    <footer class="footer-bg w-full absolute bottom-0 left-0 text-center pt-10 pb-10 px-20">
+    <footer class="footer-bg w-screen bottom-0 absolute left-0 text-center pt-10 pb-10 px-20">
         <!-- Tailwindcss class on div to set grid values for grid container including media queries for responsiveness -->
         <div  class="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <!-- Tailwindcss class on div to set mobile view for subscribtion section of footer -->
-            <div class=" md:space-y-0 md:flex-row col-span-2">
+            <div class=" md:space-y-0 md:flex-row ">
                 <!-- Tailwindcss class on h1, input and button to set css values including options for light and dark theme -->
                 <label for="Subscribe heading"><h1 class="font-semibold max-w-lg text-lg tracking-tight text-[#313131] xl:text-xl dark:text-white mb-5 ">Subscribe to our new letter for update.</h1></label>
                 <label for="Email Address"><input type="text" placeholder="Email Address" class="px-2 py-1 text-[#313131] hover:shadow-lg focus:outline-[#D86943] border-none bg-slate-200 mb-5"></label>
